@@ -14,7 +14,7 @@
 
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: futura;
         line-height:30px;
         font-size:16px;
 }
@@ -151,21 +151,26 @@ color:#fff;
 
     .floatLeft {
       float: left;
-      margin-left: 7%;
+      width: 180px;
+      height: 140px;
+      margin-left: 25%;
      }
 
     .floatRight {
       float: right;
-    margin-right: 7%;
+      width: 180px;
+      height: 140px;
+      margin-right: 25%;
   }
 
     .logoHeader {
       color: black;
         padding-top:40px;
         padding-bottom: 20px;
-        font-family: Handwrite1;
-        font-weight:550;
-        font-size: 600%;
+        font-family: Handwrite;
+        font-weight:100;
+        font-size-adjust: auto;
+        font-size: 350%;
         vertical-align: middle;
         text-align: center;
     }
@@ -179,20 +184,39 @@ color:#fff;
   font-size: 18px;
   font-style: italic;
   float: left;
-  font-family: monospace;
+  font-family: futura;
+
+}
+
+.contact-us{
+  width: 70%;
+  box-sizing: border-box;
+  border: 2px solid;
+  border-radius: 50px;
+  font-size: 18px;
+  font-family: futura_book_italic;
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin-left: auto;
+  margin-right: 15px;
+  -webkit-transition: width 0.6s ease-in-out;
+  transition: width 0.6s ease-in-out;
 
 }
 
 
-
- input[type=text] {
+ .verifica {
      width: 40%;
      box-sizing: border-box;
      float: right;
      border: 2px solid #202020;
      border-radius: 50px;
      font-size: 18px;
-     font-family: monospace;
+     font-family: futura_book_italic;
      background-color: white;
      background-image: url('searchicon.png');
      background-position: 10px 10px;
@@ -206,7 +230,7 @@ color:#fff;
      transition: width 0.6s ease-in-out;
  }
 
- input[type=text]:focus {
+ .verifica:focus {
      width: 75%;
  }
 
@@ -225,7 +249,7 @@ color:#fff;
     text-decoration: none;
     display: inline-block;
     font-size: 18px;
-    font-family: monospace;
+    font-family: futura_book_italic;
 
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
@@ -264,6 +288,7 @@ color:#fff;
 
 .mySlide{
   display: none;
+  max-height: 600px;
 }
 
 /* =============================================================
@@ -279,7 +304,7 @@ color:#fff;
     background-color:#121212;
     padding-bottom:30px;
     padding-top:30px;
-    color: #DFD1D1;
+    color: #202020;
 }
 .social-links a,.social-links a:hover{
     color:#fff;

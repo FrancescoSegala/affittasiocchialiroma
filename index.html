@@ -26,7 +26,6 @@
                      <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="." ><small ><strong>Speziale & Fortuna</strong> <br> Affittasi Occhiali Roma</small></a>
             </div>
@@ -47,7 +46,6 @@
                         <a title="Daltonismo" href="http://affittasiocchiali.it/daltonismo-2/" tabindex="-1">Daltonismo</a>
                          </div></li>
                      <li><a href="#stats-download">Domande e Risposte</a></li>
-                    <li><a href="contact.html">Contattaci</a></li>
                 </ul>
             </div>
 
@@ -57,10 +55,17 @@
     
     <section id="home-sec">
           
-        <div class="overlay" >
-            <img class="logo floatLeft" src="assets/img/logo.png" height="140px" /> 
-            <img class="logo floatRight" src="assets/img/logoTransparent.png" height="140px"f/>  
-            <h1 class="logoHeader">  I Primi al Mondo </h1> 
+        <div class="overlay row" >
+            <div class="col-md-4 col-xs-12 col-lg-4">
+            <img class="logo floatLeft " src="assets/img/logo.png" />
+            </div>
+             <div class="col-md-4 col-xs-12 col-lg-4">
+            <h1 class="logoHeader ">  I Primi al Mondo </h1>
+            </div>
+            <div class="col-md-4 col-xs-12 col-lg-4">
+            <img class="logo floatRight " src="assets/img/logoTransparent.png" />  
+            </div>
+           
         </div>
     </section>
     <!--NAVIGATION BAR END--------------------------------------------------------------------------------------------------------------------------------->
@@ -129,13 +134,13 @@ function carousel() {
     <h3>Come funziona il servizio che ci differenzia</h3>
     <p>
        spiegazione breve del servizio affittasi occhiali........
-        <a >PER SAPERNE DI PIU...</a>
+        <a href="#">PER SAPERNE DI PIU...</a>
     </p>
 
 
         </div>
     </section>
-    <!--SERVICES SECTION END-->
+    <!--SERVICES SECTION END----------------------------------------------------------------------------------------------------------------------->
     
 
         <section id="search-domain" >
@@ -146,7 +151,7 @@ function carousel() {
         <div class="container">
             
   <form action="http://affittasiocchiali.it/elenco-contratti/" method="get" autocomplete="on">
-      <input id="cf" name="clicf" type="text" placeholder="Inserisci il tuo codice fiscale"><button class="button button-verifica" value="Verifica" type="submit" >Verifica</button>
+      <input class="verifica" id="cf" name="clicf" type="text" placeholder="Inserisci il tuo codice fiscale" required><button class="button button-verifica" value="Verifica" type="submit">Verifica</button>
   </form>
 </div>
     
@@ -157,7 +162,7 @@ function carousel() {
       $('form').on('submit',function(e){
     e.preventDefault();
     $.ajax({
-        type     : "GRT",
+        type     : "GET",
         cache    : false,
         url      : "http://affittasiocchiali.it/elenco-contratti//?clicf="+$("cf").serialize(),
         success  : function(data) {
@@ -175,36 +180,50 @@ function carousel() {
         <div class="container">
             <div class="row">
                 
-                <div class="col-md-4 col-lg-4 col-sm-4">
-      <h4>Follow us on </h4>
+                <div class="col-md-4 col-lg-4 col-sm-4 ">
+      <h4 style="color:white">Follow us on </h4>
                     <div class="social-links">
 
-                         <a href="#" > <i class="fa fa-facebook fa-2x" ></i></a>
-                         <a href="#" > <i class="fa fa-instagram fa-2x" ></i></a>
-                         <a href="#" > <i class="fa fa-google-plus fa-2x" ></i></a>
+                         <a href="https://www.facebook.com/AffittasiOcchialiRoma/" > <i class="fa fa-facebook fa-2x" ></i></a>
+                         <a href="https://www.instagram.com/affittasi_occhiali/" > <i class="fa fa-instagram fa-2x" ></i></a>
+                        <h6 style="color:white;"> 
+                            <br><br><br>
+                            <p>Affittasi Occhiali</p>
+                            by RENT TOO s.r.l.
+                            <br><br>Filiale di Roma
+                            <br><br>Speziale Fortuna
+                            <br><br>Il circuito internazionale del servizio di occhiali in noleggio
+                            <br><br>© COPYRIGHT – All rights are reserved –Tutti i diritti sono riservati
+                            </h6>
                    </div>
 
                 </div>
-                <div class="col-md-8 col-lg-8 col-sm-8">
+                <div class="col-md-8 col-lg-8 col-sm-8 ">
                     
-                    <h4>contact us:</h4>
-                    <form>
+                    <h4 style="color:white">contact us:</h4>
+                    <form name="contact-us" method="post" action="email.php">
                     <div class="row">
-                        <h5>la tua email</h5>    
-                    <input id="email" type="text" placeholder="example@email.domain">
+                        <h5 style="color:white">la tua email</h5>    
+                    <input class="contact-us" id="email" name="email" type="text" placeholder="example@email.domain" required>
                         </div>    
                     <div class="row">
-                    <h5>il tuo nome</h5>
-                    <input id="nome" type="text" placeholder="Nome Cognome">
+                    <h5 style="color:white">il tuo nome</h5>
+                    <input class="contact-us" id="nome" name="nome" type="text" placeholder="Nome Cognome" required>
                         </div>
                         <div class="row">
-                    <h5>messaggio</h5>
-                    <textarea name="messaggio" cols="30" rows="3"></textarea>   
+                    <h5 style="color:white">messaggio</h5>
+                    <textarea class="contact-us" name="messaggio" cols="30" rows="3" required></textarea> 
+                            <input type="submit" class="contact-us" value="invia" ><a href="email.php">invia</a>
                         </div>
                             </form>
+                    
+              
                 </div>
             </div>
                
+            
+   
+            
         </div>
     </section>
      <!--FOOTER SECTION END------------------------------------------------------------------------------------------------------------------------>

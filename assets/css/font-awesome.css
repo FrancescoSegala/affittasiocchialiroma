@@ -5,9 +5,23 @@
 /* FONT PATH
  * -------------------------- */
 
+@font-face {
+  font-family: futura_book;
+  src: url(../fonts/Futura Book font.ttf);
+}
+@font-face {
+  font-family: futura_book_italic;
+  src: url(../fonts/FuturaBookItalic.ttf);
+}
+@font-face {
+  font-family: futura;
+  src: url(../fonts/futuralight.ttf);
+}
+
+
  @font-face {
      font-family: HandWrite;
-     src: url(../fonts/TheOnlyException.ttf);
+     src: url(../fonts/ChopinScript.otf);
  }
 
  @font-face {
