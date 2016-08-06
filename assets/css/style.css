@@ -176,12 +176,12 @@ color:#fff;
     }
 
 /* =============================================================
-   SEARCH DOMAIN SECTION STYLES  -IN HOME / INDEX.HTML
+   verifica DOMAIN SECTION STYLES  -IN HOME / INDEX.HTML
  ============================================================ */
 
 
-#search-domain  p{
-  font-size: 18px;
+#verifica  p{
+  font-size: 20px;
   font-style: italic;
   float: left;
   font-family: futura;

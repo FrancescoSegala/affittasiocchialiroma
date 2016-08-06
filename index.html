@@ -31,7 +31,7 @@
             </div>
             <div class="navbar-collapse collapse move-me">
                 <ul class="nav navbar-nav navbar-right set-links">
-                     <li><a href="about.html">chi Siamo</a></li>
+                     <li><a href="chisiamo.html">chi Siamo</a></li>
                      <li class="dropdown"><a>La Mia Vista</a>
                     <div class="dropdown-content">
                          <a title="Le Leggi della giovinezza visiva" href="http://affittasiocchiali.it/le-leggi-della-giovinezza-visiva/" tabindex="-1">Le Leggi della giovinezza visiva</a>
@@ -45,7 +45,7 @@
                         <a title="Strabismo" href="http://affittasiocchiali.it/strabismo/" tabindex="-1">Strabismo</a>
                         <a title="Daltonismo" href="http://affittasiocchiali.it/daltonismo-2/" tabindex="-1">Daltonismo</a>
                          </div></li>
-                     <li><a href="#stats-download">Domande e Risposte</a></li>
+                     <li><a href="faq.html">Domande e Risposte</a></li>
                 </ul>
             </div>
 
@@ -108,24 +108,8 @@
   </div>
 
 
-    <script>
-var myIndex = 0;
-carousel();
 
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlide");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 4500); // Change image every 4.5 seconds
-}
-</script>
-
-    <!--SLIDING PIC SECTION END------------------------------------------------------------------------------------------------------------------------->
+<!---SLIDING PIC SECTION END------------------------------------------------------------------------------------------------------------------------->
     
     
         <section id="services-sec">
@@ -134,16 +118,16 @@ function carousel() {
     <h3>Come funziona il servizio che ci differenzia</h3>
     <p>
        spiegazione breve del servizio affittasi occhiali........
-        <a href="#">PER SAPERNE DI PIU...</a>
+        <a href="chisiamo.html">PER SAPERNE DI PIU...</a>
     </p>
 
 
         </div>
     </section>
-    <!--SERVICES SECTION END----------------------------------------------------------------------------------------------------------------------->
+    <!--SERVICE SECTION END----------------------------------------------------------------------------------------------------------------------->
     
 
-        <section id="search-domain" >
+        <section id="verifica" >
             <div class="container">
             <p  >verifica la scadenza dell'affitto dell'occhiale</p>
             </div>
@@ -156,23 +140,8 @@ function carousel() {
 </div>
     
     </section>
-
-    <script type=text/javascript>
-        
-      $('form').on('submit',function(e){
-    e.preventDefault();
-    $.ajax({
-        type     : "GET",
-        cache    : false,
-        url      : "http://affittasiocchiali.it/elenco-contratti//?clicf="+$("cf").serialize(),
-        success  : function(data) {
-            window.alert("yes");
-            }
-           });
-      });
-    </script>    
     
-    <!--SEARCH SECTION END-------------------------------------------------------------------------------------------------------------------->
+    <!--VERIFICA SECTION END-------------------------------------------------------------------------------------------------------------------->
 
     
 
@@ -237,12 +206,39 @@ function carousel() {
                    </div>
     </div>
     
-    
-   
-
-    
-     <!-- COPY TEXT SECTION END-->
+     <!-- COPY TEXT SECTION END------------------------------------------------------------------------------------------------------------------->
     <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    
+    <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlide");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 4500); // Change image every 4.5 seconds
+}
+        
+        
+    
+$('form').on('submit',function(e){
+    e.preventDefault();
+    $.ajax({
+        type     : "GET",
+        cache    : false,
+        url      : "http://affittasiocchiali.it/elenco-contratti//?clicf="+$("cf").serialize(),
+        success  : function(data) {
+            window.alert("yes");
+            }
+        });
+    });        
+</script>
     <!-- CORE JQUERY  -->
     <script src="assets/js/jquery-1.11.1.js"></script>
     <!-- BOOTSTRAP SCRIPTS  -->
