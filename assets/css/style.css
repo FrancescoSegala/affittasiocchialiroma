@@ -401,6 +401,17 @@ FAQ SECTION STYLE
   margin-left: 5%;
 }
 
+
+
+img.circle-image{
+     width: 200px;
+  height: 200px;
+  border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
 #faq-sec .container .circle-img{
   width: 225px;
   height: 225px;;
