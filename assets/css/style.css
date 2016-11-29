@@ -19,9 +19,12 @@ body {
         font-size:16px;
 }
 
+
 section {
     padding-bottom:80px;
     padding-top:75px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 
@@ -428,3 +431,8 @@ SLIDER FOTO
 .jssorb13 div:hover, .jssorb13 .av:hover { background-position: -35px -5px; }
 .jssorb13 .av { background-position: -65px -5px; }
 .jssorb13 .dn, .jssorb13 .dn:hover { background-position: -95px -5px; }
+
+#chi-siamo-sec #border {
+    border-radius:20px;
+}
+

@@ -51,12 +51,20 @@ $headers = 'From: '.$email_from."\r\n".
 
 <!-- include your own success html here -->
 
+<link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+     <!-- FONTAWESOME STYLE CSS -->
+     <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- CUSTOM STYLE CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+<meta http-equiv="refresh" content="5;url=http://www.affittasiocchialiroma.it" />
+<body style="background-image:url(/assets/img/send.gif);" >
+ Grazie per averci contattato, leggeremo il suo messaggio al piu presto.<br>
+<a href="http://www.affittasiocchialiroma.it/"><strong>torna al sito</strong> </a>
 
 
-grazie per averci contattato, leggeremo il suo messaggio al piu presto.
-<a href="http://www.affittasiocchialiroma.it/">torna al sito </a>
-
-
+    
+</body>
 
 <?php
 }
